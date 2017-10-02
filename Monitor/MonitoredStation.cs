@@ -5,6 +5,9 @@ using Common;
 
 namespace Monitor
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class MonitoredStation : INotifyPropertyChanged
     {
         #region Fields
