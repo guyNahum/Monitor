@@ -1,0 +1,5 @@
+C:\Users\guy\Desktop\לימודים\סדנא תקשורת\NetworkMonitor\Monitor\TypeDefinition\bin\Debug\Common.dll
+C:\Users\guy\Desktop\לימודים\סדנא תקשורת\NetworkMonitor\Monitor\TypeDefinition\bin\Debug\Common.pdb
+C:\Users\guy\Desktop\לימודים\סדנא תקשורת\NetworkMonitor\Monitor\TypeDefinition\obj\Debug\Common.csprojResolveAssemblyReference.cache
+C:\Users\guy\Desktop\לימודים\סדנא תקשורת\NetworkMonitor\Monitor\TypeDefinition\obj\Debug\Common.dll
+C:\Users\guy\Desktop\לימודים\סדנא תקשורת\NetworkMonitor\Monitor\TypeDefinition\obj\Debug\Common.pdb

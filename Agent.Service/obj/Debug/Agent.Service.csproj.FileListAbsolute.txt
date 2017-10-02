@@ -1,0 +1,6 @@
+C:\Users\guy\Desktop\לימודים\סדנא תקשורת\NetworkMonitor\Monitor\Agent.Service\bin\Debug\Agent.Service.exe.config
+C:\Users\guy\Desktop\לימודים\סדנא תקשורת\NetworkMonitor\Monitor\Agent.Service\bin\Debug\Agent.Service.exe
+C:\Users\guy\Desktop\לימודים\סדנא תקשורת\NetworkMonitor\Monitor\Agent.Service\bin\Debug\Agent.Service.pdb
+C:\Users\guy\Desktop\לימודים\סדנא תקשורת\NetworkMonitor\Monitor\Agent.Service\obj\Debug\Agent.Service.csprojResolveAssemblyReference.cache
+C:\Users\guy\Desktop\לימודים\סדנא תקשורת\NetworkMonitor\Monitor\Agent.Service\obj\Debug\Agent.Service.exe
+C:\Users\guy\Desktop\לימודים\סדנא תקשורת\NetworkMonitor\Monitor\Agent.Service\obj\Debug\Agent.Service.pdb

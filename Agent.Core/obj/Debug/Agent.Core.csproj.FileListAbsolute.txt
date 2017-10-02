@@ -1,0 +1,7 @@
+C:\Users\guy\Desktop\לימודים\סדנא תקשורת\NetworkMonitor\Monitor\Agent.Core\bin\Debug\Agent.Core.dll
+C:\Users\guy\Desktop\לימודים\סדנא תקשורת\NetworkMonitor\Monitor\Agent.Core\bin\Debug\Agent.Core.pdb
+C:\Users\guy\Desktop\לימודים\סדנא תקשורת\NetworkMonitor\Monitor\Agent.Core\obj\Debug\Agent.Core.dll
+C:\Users\guy\Desktop\לימודים\סדנא תקשורת\NetworkMonitor\Monitor\Agent.Core\obj\Debug\Agent.Core.pdb
+C:\Users\guy\Desktop\לימודים\סדנא תקשורת\NetworkMonitor\Monitor\Agent.Core\obj\Debug\Agent.Core.csprojResolveAssemblyReference.cache
+C:\Users\guy\Desktop\לימודים\סדנא תקשורת\NetworkMonitor\Monitor\Agent.Core\bin\Debug\Common.dll
+C:\Users\guy\Desktop\לימודים\סדנא תקשורת\NetworkMonitor\Monitor\Agent.Core\bin\Debug\Common.pdb
