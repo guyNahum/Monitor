@@ -11,10 +11,10 @@ namespace Monitor
     public class Sample
     {
         protected DateTime _time;
-        public double _value;
+        public object _value = 0;
         public IPAddress _ip;
         
-        public Sample(double value, IPAddress ip)
+        public Sample(object value, IPAddress ip)
         {
             _ip = ip;
             _value = value;
@@ -49,7 +49,7 @@ namespace Monitor
 
         public override string ToString()
         {
-            return _value == -1 ? FAIL_MESSAGE : 
+            return (float)_value == -1 ? FAIL_MESSAGE : 
                                   string.Format("{0} :: {1} שניות", _time.ToLongTimeString(), _value);
         }
     }

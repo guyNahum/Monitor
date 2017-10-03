@@ -3,6 +3,9 @@ using System.Net;
 using System.Net.NetworkInformation;
 using Common;
 using System.Timers;
+using System.Linq;
+using System.Collections.Generic;
+using System;
 
 namespace Agent.Core
 {
@@ -13,6 +16,8 @@ namespace Agent.Core
         private static float _cpuSample = 0;
         private static float _memorySample = 0;
         private static object _locker = new object();
+        private static NetworkInterface[] _interfaces;
+
         static ComputerStatistics()
         {
             Timer timer = new Timer();
@@ -20,8 +25,36 @@ namespace Agent.Core
             timer.Elapsed += updateSamples;
             timer.Start();
 
+            _interfaces = NetworkInterface.GetAllNetworkInterfaces();
             _ramCounter = new PerformanceCounter("Memory", "Available MBytes");
             _cpuCounter = new PerformanceCounter("Processor", "% Processor Time", "_Total");
+        }
+
+        public static IList<string> GetNetworkAdaptersNames()
+        {
+            return _interfaces.Select(GetName).ToList();
+        }
+
+        public static AdapterStatistics GetNetworkAdapterStatistics(string adapterName)
+        {
+            NetworkInterface adapter = _interfaces.FirstOrDefault(a => a.Name.Equals(adapterName));
+            //NetworkInterface adapter = _interfaces.FirstOrDefault();
+
+            if (adapter == null)
+            {
+                Logger.Error(string.Format("Recieved unknows network adapter name - {0}", adapterName));
+                return new AdapterStatistics();
+            }
+            else
+            {
+                IPv4InterfaceStatistics statistics = adapter.GetIPv4Statistics();
+                return new AdapterStatistics(statistics.BytesSent, statistics.BytesReceived);
+            }
+        }
+
+        private static string GetName(NetworkInterface networkInterface)
+        {
+            return networkInterface.Name;
         }
 
         private static void updateSamples(object sender, ElapsedEventArgs e)
@@ -56,7 +89,7 @@ namespace Agent.Core
             return pingReply.Status == IPStatus.Success ? pingReply.RoundtripTime : -1;
         }
 
-        public static float GetSample(SampleRequest sampleRequest)
+        public static object GetSample(SampleRequest sampleRequest)
         {
             switch (sampleRequest._sampleType)
             {
@@ -70,12 +103,16 @@ namespace Agent.Core
                     }
                 case (SamplesEnum.PING):
                     {
-                        return GetPingSample(sampleRequest._ip);
+                        return GetPingSample((IPAddress)sampleRequest._parameter);
                     }
-                //case (SamplesEnum.PORT):
-                //    {
-                //        return GetCpuSample();
-                //    }
+                case (SamplesEnum.AdapterNames):
+                    {
+                        return GetNetworkAdaptersNames();
+                    }
+                case (SamplesEnum.AdapterStatistics):
+                    {
+                        return GetNetworkAdapterStatistics(sampleRequest._parameter as string);
+                    }
                 default:
                     {
                         return -999;

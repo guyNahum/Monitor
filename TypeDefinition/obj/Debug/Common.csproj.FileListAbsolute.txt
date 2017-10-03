@@ -3,3 +3,8 @@ C:\Users\guy\Desktop\לימודים\סדנא תקשורת\NetworkMonitor\Monitor
 C:\Users\guy\Desktop\לימודים\סדנא תקשורת\NetworkMonitor\Monitor\TypeDefinition\obj\Debug\Common.csprojResolveAssemblyReference.cache
 C:\Users\guy\Desktop\לימודים\סדנא תקשורת\NetworkMonitor\Monitor\TypeDefinition\obj\Debug\Common.dll
 C:\Users\guy\Desktop\לימודים\סדנא תקשורת\NetworkMonitor\Monitor\TypeDefinition\obj\Debug\Common.pdb
+C:\Users\guy\Source\Repos\Monitor\TypeDefinition\bin\Debug\Common.dll
+C:\Users\guy\Source\Repos\Monitor\TypeDefinition\bin\Debug\Common.pdb
+C:\Users\guy\Source\Repos\Monitor\TypeDefinition\obj\Debug\Common.csprojResolveAssemblyReference.cache
+C:\Users\guy\Source\Repos\Monitor\TypeDefinition\obj\Debug\Common.dll
+C:\Users\guy\Source\Repos\Monitor\TypeDefinition\obj\Debug\Common.pdb

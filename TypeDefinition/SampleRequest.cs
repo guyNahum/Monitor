@@ -7,12 +7,12 @@ namespace Common
     public struct SampleRequest
     {
         public SamplesEnum _sampleType;
-        public IPAddress _ip;
+        public object _parameter;
 
-        public SampleRequest(SamplesEnum sample, IPAddress ip = null)
+        public SampleRequest(SamplesEnum sample, object parameter = null)
         {
             _sampleType = sample;
-            _ip = ip;
+            _parameter = parameter;
         }
     }
 }

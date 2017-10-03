@@ -5,6 +5,7 @@
         CPU,
         MEMORY,
         PING,
-        PORT
+        AdapterNames,
+        AdapterStatistics
     }
 }

@@ -56,7 +56,7 @@ namespace Monitor
 
                     if (SampleArrived != null)
                     {
-                        Sample sample = new Sample((int)response._result, endPoint.Address);
+                        Sample sample = new Sample(response._result, endPoint.Address);
                         SampleArrived(sample);
                     }
                 }
@@ -67,7 +67,7 @@ namespace Monitor
             }
         }
 
-        public void StartListen()
+        private void StartListen()
         {
             Logger.Info("Start Listening to responses from agents...");
 

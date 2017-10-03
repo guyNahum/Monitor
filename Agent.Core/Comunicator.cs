@@ -43,7 +43,7 @@ namespace Agent.Core
 
                     Logger.Debug(string.Format("deserilized {0} request", request._sampleType));
 
-                    float sampleResult = ComputerStatistics.GetSample(request);
+                    object sampleResult = ComputerStatistics.GetSample(request);
                     byte[] sendBytes = new SampleResponse(sampleResult).ToByteArray();
 
                     Logger.Debug(string.Format("Sending response to monitor - {0}, value {1}", endPoint, sampleResult));

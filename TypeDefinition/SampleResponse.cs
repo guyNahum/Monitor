@@ -10,9 +10,9 @@ namespace Common
     [Serializable()]
     public struct SampleResponse
     {
-        public double _result;
+        public object _result;
 
-        public SampleResponse(double result)
+        public SampleResponse(object result)
         {
             _result = result;
         }

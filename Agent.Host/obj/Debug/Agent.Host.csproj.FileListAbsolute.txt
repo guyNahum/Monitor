@@ -8,3 +8,13 @@ C:\Users\guy\Desktop\לימודים\סדנא תקשורת\NetworkMonitor\Monitor
 C:\Users\guy\Desktop\לימודים\סדנא תקשורת\NetworkMonitor\Monitor\Agent.Host\bin\Debug\Agent.Core.pdb
 C:\Users\guy\Desktop\לימודים\סדנא תקשורת\NetworkMonitor\Monitor\Agent.Host\bin\Debug\Common.dll
 C:\Users\guy\Desktop\לימודים\סדנא תקשורת\NetworkMonitor\Monitor\Agent.Host\bin\Debug\Common.pdb
+C:\Users\guy\Source\Repos\Monitor\Agent.Host\bin\Debug\Agent.Host.exe.config
+C:\Users\guy\Source\Repos\Monitor\Agent.Host\bin\Debug\Agent.Host.exe
+C:\Users\guy\Source\Repos\Monitor\Agent.Host\bin\Debug\Agent.Host.pdb
+C:\Users\guy\Source\Repos\Monitor\Agent.Host\bin\Debug\Agent.Core.dll
+C:\Users\guy\Source\Repos\Monitor\Agent.Host\bin\Debug\Common.dll
+C:\Users\guy\Source\Repos\Monitor\Agent.Host\bin\Debug\Agent.Core.pdb
+C:\Users\guy\Source\Repos\Monitor\Agent.Host\bin\Debug\Common.pdb
+C:\Users\guy\Source\Repos\Monitor\Agent.Host\obj\Debug\Agent.Host.csprojResolveAssemblyReference.cache
+C:\Users\guy\Source\Repos\Monitor\Agent.Host\obj\Debug\Agent.Host.exe
+C:\Users\guy\Source\Repos\Monitor\Agent.Host\obj\Debug\Agent.Host.pdb
