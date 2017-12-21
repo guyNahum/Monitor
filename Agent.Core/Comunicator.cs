@@ -78,5 +78,20 @@ namespace Agent.Core
                 }
             }
         }
+
+        public void Close()
+        {
+            Logger.Info("The Comunicator is closing");
+
+            try
+            {
+                _udpClient.Close();
+                _sampleRequestCollection.Dispose();
+            }
+            catch(Exception exception)
+            {
+                Logger.Error(exception.Message);
+            }
+        }
     }
 }

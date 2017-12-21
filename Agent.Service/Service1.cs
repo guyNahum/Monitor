@@ -1,17 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Diagnostics;
-using System.Linq;
+﻿using Agent.Core;
 using System.ServiceProcess;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Agent.Service
 {
     public partial class Service1 : ServiceBase
     {
+        private Comunicator _comunicator;
+
         public Service1()
         {
             InitializeComponent();
@@ -19,10 +14,13 @@ namespace Agent.Service
 
         protected override void OnStart(string[] args)
         {
+            _comunicator = new Comunicator();
+            _comunicator.StartListen();
         }
 
         protected override void OnStop()
         {
+            _comunicator.Close();
         }
     }
 }

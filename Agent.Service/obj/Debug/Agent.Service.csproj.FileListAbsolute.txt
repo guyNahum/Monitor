@@ -4,3 +4,13 @@ C:\Users\guy\Desktop\לימודים\סדנא תקשורת\NetworkMonitor\Monitor
 C:\Users\guy\Desktop\לימודים\סדנא תקשורת\NetworkMonitor\Monitor\Agent.Service\obj\Debug\Agent.Service.csprojResolveAssemblyReference.cache
 C:\Users\guy\Desktop\לימודים\סדנא תקשורת\NetworkMonitor\Monitor\Agent.Service\obj\Debug\Agent.Service.exe
 C:\Users\guy\Desktop\לימודים\סדנא תקשורת\NetworkMonitor\Monitor\Agent.Service\obj\Debug\Agent.Service.pdb
+C:\Users\guy\Source\Repos\Monitor\Agent.Service\bin\Debug\Agent.Service.exe.config
+C:\Users\guy\Source\Repos\Monitor\Agent.Service\bin\Debug\Agent.Service.exe
+C:\Users\guy\Source\Repos\Monitor\Agent.Service\bin\Debug\Agent.Service.pdb
+C:\Users\guy\Source\Repos\Monitor\Agent.Service\bin\Debug\Agent.Core.dll
+C:\Users\guy\Source\Repos\Monitor\Agent.Service\bin\Debug\Common.dll
+C:\Users\guy\Source\Repos\Monitor\Agent.Service\bin\Debug\Agent.Core.pdb
+C:\Users\guy\Source\Repos\Monitor\Agent.Service\bin\Debug\Common.pdb
+C:\Users\guy\Source\Repos\Monitor\Agent.Service\obj\Debug\Agent.Service.csprojResolveAssemblyReference.cache
+C:\Users\guy\Source\Repos\Monitor\Agent.Service\obj\Debug\Agent.Service.exe
+C:\Users\guy\Source\Repos\Monitor\Agent.Service\obj\Debug\Agent.Service.pdb

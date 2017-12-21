@@ -38,7 +38,6 @@ namespace Agent.Core
         public static AdapterStatistics GetNetworkAdapterStatistics(string adapterName)
         {
             NetworkInterface adapter = _interfaces.FirstOrDefault(a => a.Name.Equals(adapterName));
-            //NetworkInterface adapter = _interfaces.FirstOrDefault();
 
             if (adapter == null)
             {

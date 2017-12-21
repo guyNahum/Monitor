@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="Monitor.AgentCommunicator">
+    <Position X="19" Y="1.25" Width="2.5" />
+    <AssociationLine Name="AdapterStatisticAgent" Type="Monitor.SampleAgent">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.348" Y="0.11" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="CPUAgent" Type="Monitor.SampleAgent">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="1.013" Y="0.11" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="MemoryAgent" Type="Monitor.SampleAgent">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.795" Y="0.05" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="PingAgent" Type="Monitor.SampleAgent">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="1.004" Y="0.08" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAEAAAgAAAAAAAAAAAAAAAAAAAACAAGQAAAAAIAAAA=</HashCode>
+      <FileName>AgentCommunicator.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="AdapterStatisticAgent" />
+      <Property Name="CPUAgent" />
+      <Property Name="MemoryAgent" />
+      <Property Name="PingAgent" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Monitor.FixedSizedQueue&lt;T&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.75" Y="5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAACIAAEAAAAAAAgAACAAAAAAAAAABAAAA=</HashCode>
+      <FileName>FixedSizedQueue.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.217" />
+  </Class>
+  <Class Name="Monitor.MainWindow" BaseTypeListCollapsed="true">
+    <Position X="6.75" Y="1.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Monitor.MainWindowViewModel">
+    <Position X="9.5" Y="1.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAAAAACAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>MainWindowViewModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="_monitoredStations" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Monitor.MonitoredStation" BaseTypeListCollapsed="true">
+    <Position X="13.75" Y="1" Width="3.5" />
+    <AssociationLine Name="_adapterStatisticsSampleRequest" Type="Common.SampleRequest" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="17.25" Y="4.255" />
+        <Point X="17.625" Y="4.255" />
+        <Point X="17.625" Y="4.859" />
+        <Point X="20.75" Y="4.859" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="_cpuSampleRequest" Type="Common.SampleRequest" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="17.25" Y="5.359" />
+        <Point X="20.5" Y="5.359" />
+        <Point X="20.5" Y="5.562" />
+        <Point X="21.312" Y="5.562" />
+        <Point X="21.312" Y="5.312" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.715" Y="0.09" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="_ipSampleRequest" Type="Common.SampleRequest" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="17.25" Y="6.172" />
+        <Point X="21.82" Y="6.172" />
+        <Point X="21.82" Y="5.312" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="1.281" Y="0.864" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="_memorySampleRequest" Type="Common.SampleRequest" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="17.25" Y="3.906" />
+        <Point X="21.062" Y="3.906" />
+        <Point X="21.062" Y="4.75" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.438" Y="0.338" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AGAIAAASCENAAIAFAEFiAABAggaGQYACAZGAABABAAA=</HashCode>
+      <FileName>MonitoredStation.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_agentCommunicator" />
+      <Field Name="_adapterNamesSampleRequest" />
+      <Field Name="_adapterStatisticsSampleRequest" />
+      <Field Name="_cpuSampleRequest" />
+      <Field Name="_ipSampleRequest" />
+      <Field Name="_memorySampleRequest" />
+      <Property Name="CPUSamples" />
+      <Property Name="MemorySamples" />
+      <Property Name="PingSamples" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Monitor.Sample" Collapsed="true">
+    <Position X="9.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAgAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Sample.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Monitor.CPUSample" Collapsed="true">
+    <Position X="11.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Sample.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Monitor.MemorySample" Collapsed="true">
+    <Position X="7" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Sample.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Monitor.PingSample" Collapsed="true">
+    <Position X="9.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Sample.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Monitor.SampleAgent">
+    <Position X="23.5" Y="1.75" Width="5" />
+    <TypeIdentifier>
+      <HashCode>QQAAIAAAAAEgAAAAAAAAAAAAQAgEAAAJAgAAAAAAAQA=</HashCode>
+      <FileName>SampleAgent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="Common.SampleRequest" Collapsed="true">
+    <Position X="20.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier />
+  </Struct>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
