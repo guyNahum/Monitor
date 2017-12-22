@@ -1,5 +1,6 @@
 ﻿using Agent.Core;
 using System.ServiceProcess;
+using System.Threading.Tasks;
 
 namespace Agent.Service
 {
@@ -15,7 +16,8 @@ namespace Agent.Service
         protected override void OnStart(string[] args)
         {
             _comunicator = new Comunicator();
-            _comunicator.StartListen();
+
+            Task.Factory.StartNew(_comunicator.StartListen);
         }
 
         protected override void OnStop()
